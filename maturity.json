@@ -1,0 +1,478 @@
+{
+    id:"caplinliberator"
+    ,"name":"Caplin Liberator"
+    ,"description":"The real-time Ajax / Comet streaming server"
+    ,"version":"4.5.9"
+    ,"status":"production"
+    ,"license":["commercial"]
+    ,"dedicated":"true"
+    ,"dependencies":"none"
+    ,"url":"http://www.freeliberator.com/"
+    ,"demoUrl":"http://www.freeliberator.com/examples/"
+    ,"docsUrl":"http://www.freeliberator.com/documentation/"
+    ,"clientAPI":["JavaScript","Java",".NET","Silverlight"]
+    ,"serverAPI":["C","Java",".NET"] /* accurate? */
+    ,"serverLang":["C"]
+    ,"serverOS":["linux/unix", "windows"]
+    ,"protocols":["RTTP (Real Time Text Protocol)"]
+    ,"transports":["polling","iframe-streaming","htmlfile-streaming","xhr-streaming","multipart-streaming","direct-socket"] /* accurate? */
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+    ,"verticalScaling":"30,000 clients max. 1 million total client updates/sec at 10,000 clients"
+	,"cloudHostingProviders": [ /* accurate? */
+	]
+    ,"support": [
+        {"provider":"Caplin", "url": "http://caplin.com/", "type": "commercial"}
+        ,{"provider":"Free Liberator Project", "url": "http://freeliberator.com/", "type": "free"}
+    ]
+    ,"contentLastModified":"2010-08-21"
+},
+,{
+	"id":"cometd"
+	,"name":"cometD (Java/JavaScript)"
+	,"description":"Scalable HTTP-based event routing bus"
+	,"version":"2.0.0"
+	,"status":"production"
+	,"license":["Apache 2"]
+	,"dedicated":"true"
+	,"dependencies":"none"
+    ,"url":"http://www.cometd.com/"
+    ,"demoUrl":"" /* accurate? */
+    ,"docsUrl":"http://www.cometd.com/documentation"
+	,"clientAPI":["JavaScript","Java",".NET","Silverlight"] /* accurate? */
+	,"serverAPI":["Java"]
+	,"serverLang":["Java"]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":["Bayeux"]
+	,"transports":["polling","long-polling","callback-polling","WebSockets"] /* accurate? */
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"vertical":"Jetty/Bayeux can support 20,000 simultaneous clients per node with several thousands of messages per second. Jetty/ActiveMQ has been able to deliver 7,000 price changes per second to 40,000 users over a 3 node cluster."
+	,"cloudHostingProviders": [
+		{"provider":"Intalio", "url": "http://intalio.com/", "type": "commercial"}
+	]
+	,"supportProviders": [
+		{"provider":"Intalio", "url": "http://intalio.com/", "type": "commercial"}
+		,{"provider":"cometD Project", "url": "http://cometd.com/", "type": "free"}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"erlycomet"
+	,"name":"ErlyComet"
+	,"description":"Bayeux Functionality for Erlang web servers"
+	,"version":"Alpha" /* accurate? */
+	,"status":"Alpha"
+	,"license":["MIT"]
+	,"dedicated":"true"
+	,"dependencies":"none"
+	,"url":"http://code.google.com/p/erlycomet/"
+    ,"demoUrl":"http://code.google.com/p/erlycomet/wiki/Tutorial"
+    ,"docsUrl":"http://code.google.com/p/erlycomet/wiki/Tutorial"
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":["Erlang"]
+	,"serverLang":["Erlang"]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":["Bayeux"]
+	,"transports":["polling","long-polling","callback-polling","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+	]
+	,"supportProviders": [
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"glassfish"
+	,"name":"Glassfish"
+	,"description":"Java Application Server"
+	,"version":"3.0.1"
+	,"status":"production"
+	,"license":["Apache 2.0","Commercial"]
+	,"dedicated":"true"
+	,"dependencies":"none"
+	,"url":"http://glassfish.dev.java.net/"
+    ,"demoUrl":"https://glassfish-samples.dev.java.net/"
+    ,"docsUrl":"http://wiki.glassfish.java.net/Wiki.jsp?page=PlanForGlassFishV3"
+	,"clientAPI":["JavaScript", "Java"]
+	,"serverAPI":["Java"]
+	,"serverLang":["Java"]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":["Bayeux"]
+	,"transports":["polling","long-polling","callback-polling","iframe-streaming","htmlfile-streaming","xhr-streaming","multipart-streaming"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":"Sun achieved 883.66 JOPS@Standard on a single app server instance running on a Sun Fire T2000 server. That translates to over 7000 simultaneous active user"
+	,"cloudHostingProviders": [
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "http://www.oracle.com/us/products/middleware/application-server/oracle-glassfish-server/index.html", "type": "commercial"}
+		,{"provider":"java.net", "url": "http://forums.java.net/jive/forum.jspa?forumID=56&start=0", "type": "free"}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"lightstreamer"
+	,"name":"Lightstreamer"
+	,"description":"Live Web Content Delivery"
+	,"version":"3.6"
+	,"status":"production"
+	,"license":["Free","Commercial"]
+	,"dedicated":"true"
+	,"dependencies":"none"
+	,"url":"http://lightstreamer.com/"
+    ,"demoUrl":"http://www.lightstreamer.com/demos.htm"
+    ,"docsUrl":"http://www.lightstreamer.com/docs.htm"
+	,"clientAPI":["JavaScript","Flash","Flex","Java (SE/ME)",".NET"]
+	,"serverAPI":["Java","Java",".NET","TCP Sockets"]
+	,"serverLang":["Java"]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":["Lightstreamer Network Protocol"]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":"20,000 - 100,000 (depends only on the message throughputs, not on the number of clients)"
+	,"cloudHostingProviders": [
+	]
+	,"supportProviders": [
+		{"provider":"Lightstreamer", "url": "http://lightstreamer.com/", "type": "commercial"}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"websync"
+	,"name":"WebSync"
+	,"description":"A highly scalable HTTP Comet server built for the Microsoft stack ASP.NET/IIS) using the Bayeux Protocol"
+	,"version":"3.1"
+	,"status":"Production"
+	,"license":["Commercial"]
+	,"dedicated":"true"
+	,"dependencies":"IIS"
+	,"url":"http://frozenmountain.com/"
+    ,"demoUrl":"http://frozenmountain.com/websync/learn/demos"
+    ,"docsUrl":"http://frozenmountain.com/websync/support/documentation/v3"
+    ,"clientAPI":["JavaScript","PHP",".NET","Silverlight",".NET Compact"]
+	,"serverAPI":["C#","VB.NET","J#","F#"]
+	,"serverLang":["C#"]
+    ,"serverOS":["windows"]
+	,"protocols":["Bayeux"]
+	,"transports":["long-polling","callback-polling","long-polling-html5-postmessage"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":"30,000 users or 30,000 message/sec with sub-second delay on a $400 commodity Acer Desktop with 3GB of RAM and 3 cores, full support for Windows Azure as of version 3.0"
+	,"cloudHostingProviders": [
+		{"provider":"Frozen Mountain", "url": "http://frozenmountain.com/websync/downloads#ondemand", "type": "Free Trial"}
+		,{"provider":"Frozen Mountain", "url": "http://frozenmountain.com/websync/downloads#ondemand", "type": "Commercial"}
+	]
+	,"supportProviders": [
+		{"provider":"WebSync Community", "url": "http://frozenmountain.com/websync/support./community", "type": "Free"}
+		{"provider":"Frozen Mountain", "url": "http://frozenmountain.com/websync/support/subscriptions", "type": "Commercial"}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+
+,{
+	"id":"hookbox"
+	,"name":"Hookbox"
+	,"description":"Comet server and message queue that tightly integrates with your existing web application via web hooks and a REST interface"
+	,"version":""
+	,"status":""
+	,"license":["MIT"]
+	,"dedicated":"true"
+	,"dependencies":"none"
+	,"url":"http://hookbox.org/"
+    ,"demoUrl":"http://hookbox.org/docs"
+    ,"docsUrl":"http://hookbox.org/docs"
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":["Python","REST"]
+	,"serverLang":["Python"]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":["CSP (Comet Session Protocol), WebSockets"]
+	,"transports":["long-polling","WebSockets"]
+    ,"messageDeliveryGuarantee":"false"
+    ,"horizontalScaling":"single node"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"Hosted Hookbox", "url": "http://hosted.hookbox.org/", "type": "Free Trial"}
+		,{"provider":"Acometo", "url": "http://acomet.com/", "type": "Commercial"}
+	]
+	,"supportProviders": [
+		{"provider":"Hookbox Community", "url": "http://groups.google.com/group/hookbox", "type": "Free"}
+		,{"provider":"Acometo", "url": "http://acomet.com/", "type": "Commercial"}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+
+,{
+	"id":"meteor"
+	,"name":"Meteor"
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"orbited"
+	,"name":"Orbited"
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"persevere"
+	,"name":"Persevere"
+	,"description":""
+	,"version":"2.0"
+	,"status":"Beta"
+	,"license":["BSD"]
+	,"dedicated":"true"
+	,"dependencies":"Node.js/V8 or Narwhal+Jack/Java"
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"rmds2web"
+	,"name":"RMDS2Web Server"
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"ape"
+	,"name":"APE (Ajax Push Engine)"
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"faye"
+	,"name":"Faye"
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"dwr"
+	,"name":"DWR"
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+/*
+
+
+,{
+	"id":""
+	,"name":""
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+	{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+	{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":""
+	,"name":""
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+
+
+Tornado
+Rupy
+Pusher
+Diesel
+*/
