@@ -4,7 +4,7 @@
     ,"description":"The real-time Ajax / Comet streaming server"
     ,"version":"4.5.9"
     ,"status":"production"
-    ,"license":["commercial"]
+    ,"license":["commercial", "free for non-commercial use"]
     ,"dedicated":"true"
     ,"dependencies":"none"
     ,"url":"http://www.freeliberator.com/"
