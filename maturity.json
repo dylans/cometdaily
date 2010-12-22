@@ -208,118 +208,118 @@
 ,{
 	"id":"meteor"
 	,"name":"Meteor"
-	,"description":""
-	,"version":""
-	,"status":""
-	,"license":[]
-	,"dedicated":""
-	,"dependencies":""
-	,"url":""
-    ,"demoUrl":""
-    ,"docsUrl":""
-	,"clientAPI":["JavaScript"]
-	,"serverAPI":[]
-	,"serverLang":[]
+	,"description":"A Perl-based Comet server"
+	,"version":"1.06"
+	,"status":"Production"
+	,"license":["GPLv2"]
+	,"dedicated":"true"
+	,"dependencies":"none"
+	,"url":"http://meteorserver.org/"
+    ,"demoUrl":"http://meteorserver.org/"
+    ,"docsUrl":"http://meteorserver.org/"
+	,"clientAPI":["JavaScript", "Perl"]
+	,"serverAPI":["Perl"]
+	,"serverLang":["Perl"]
     ,"serverOS":["linux/unix", "mac", "windows"]
-	,"protocols":[]
-	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+	,"protocols":["Transports are completely configurable within simple constraints"]
+	,"transports":["polling","long-polling","callback-polling","iframe-streaming","htmlfile-streaming","xhr-streaming","multipart-streaming","server-sent-events"]
     ,"messageDeliveryGuarantee":"true"
     ,"horizontalScaling":"multiple nodes"
-	,"verticalScaling":""
+	,"verticalScaling":"1000 clients per node receiving 2 msgs (~400 bytes) per sec each. Tested up to 5000 clients per node receiving 1 msg/sec each"
 	,"cloudHostingProviders": [
-		{"provider":"", "url": "", "type": ""}
+		/*{"provider":"", "url": "", "type": ""}*/
 	]
 	,"supportProviders": [
-		{"provider":"", "url": "", "type": ""}
+		/*{"provider":"", "url": "", "type": ""}*/
 	]
-	,"contentLastModified":"2010-08-21"
+	,"contentLastModified":"2010-12-22"
 }
 ,{
 	"id":"orbited"
 	,"name":"Orbited"
-	,"description":""
-	,"version":""
-	,"status":""
-	,"license":[]
-	,"dedicated":""
+	,"description":"A Python-based Comet server"
+	,"version":"0.7.x"
+	,"status":"Beta"
+	,"license":["MIT"]
+	,"dedicated":"true"
 	,"dependencies":""
-	,"url":""
-    ,"demoUrl":""
-    ,"docsUrl":""
-	,"clientAPI":["JavaScript"]
-	,"serverAPI":[]
-	,"serverLang":[]
+	,"url":"http://www.orbited.org/"
+    ,"demoUrl":"http://www.orbited.org/"
+    ,"docsUrl":"http://www.orbited.org/"
+	,"clientAPI":["JavaScript", "Python"]
+	,"serverAPI":["Python"]
+	,"serverLang":["Python"]
     ,"serverOS":["linux/unix", "mac", "windows"]
-	,"protocols":[]
-	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+	,"protocols":["CSP"]
+	,"transports":["polling","long-polling","callback-polling","iframe-streaming","htmlfile-streaming","xhr-streaming","multipart-streaming","server-sent-events","WebSockets"]
     ,"messageDeliveryGuarantee":"true"
     ,"horizontalScaling":"multiple nodes"
-	,"verticalScaling":""
+	,"verticalScaling":"Tested against 10,000 idling clients without issue on Intel core duo 1.6 GHz"
 	,"cloudHostingProviders": [
-		{"provider":"", "url": "", "type": ""}
+		/*{"provider":"", "url": "", "type": ""}*/
 	]
 	,"supportProviders": [
-		{"provider":"", "url": "", "type": ""}
+		/*{"provider":"", "url": "", "type": ""}*/
 	]
-	,"contentLastModified":"2010-08-21"
+	,"contentLastModified":"2010-12-22"
 }
 ,{
 	"id":"persevere"
-	,"name":"Persevere"
-	,"description":""
+	,"name":"Persevere/Tunguska"
+	,"description":"JavaScript Middleware on top of Node.js or Narwhal+ Jack, Comet support provided primarily through the Tunguska module"
 	,"version":"2.0"
 	,"status":"Beta"
 	,"license":["BSD"]
 	,"dedicated":"true"
 	,"dependencies":"Node.js/V8 or Narwhal+Jack/Java"
-	,"url":""
-    ,"demoUrl":""
-    ,"docsUrl":""
+	,"url":"http://www.persvr.org/"
+    ,"demoUrl":"http://www.persvr.org/"
+    ,"docsUrl":"http://www.persvr.org/"
 	,"clientAPI":["JavaScript"]
-	,"serverAPI":[]
-	,"serverLang":[]
+	,"serverAPI":["JavaScript"]
+	,"serverLang":["JavaScript"]
     ,"serverOS":["linux/unix", "mac", "windows"]
-	,"protocols":[]
-	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
-    ,"messageDeliveryGuarantee":"true"
+	,"protocols":[""]
+	,"transports":["polling","long-polling","WebSockets"]
+    ,"messageDeliveryGuarantee":""
     ,"horizontalScaling":"multiple nodes"
 	,"verticalScaling":""
 	,"cloudHostingProviders": [
-		{"provider":"", "url": "", "type": ""}
+		/*{"provider":"", "url": "", "type": ""}*/
 	]
 	,"supportProviders": [
-		{"provider":"", "url": "", "type": ""}
+		{"provider":"SitePen", "url": "http://sitepen.com/", "type": "commercial"}
 	]
-	,"contentLastModified":"2010-08-21"
+	,"contentLastModified":"2010-12-22"
 }
 ,{
-	"id":"rmds2web"
-	,"name":"RMDS2Web Server"
-	,"description":""
-	,"version":""
-	,"status":""
-	,"license":[]
-	,"dedicated":""
-	,"dependencies":""
-	,"url":""
-    ,"demoUrl":""
-    ,"docsUrl":""
-	,"clientAPI":["JavaScript"]
-	,"serverAPI":[]
-	,"serverLang":[]
+    "id":"migratorypushserver"
+    ,"name":"Migratory Push Server"
+    ,"description":"Migratory Push Server is a high performance, reliable, resilient HTTP streaming technology that can handle a huge number of concurrent web clients"
+    ,"version":"3.5.2"
+    ,"status":"production"
+    ,"license":["commercial", "free for evaluation"]
+    ,"dedicated":"true"
+    ,"dependencies":"none"
+    ,"url":"http://migratory.ro"
+    ,"demoUrl":"http://migratory.ro/migratory-push-server-demos.html"
+    ,"docsUrl":"http://migratory.ro/products/migratory-push-server.html"
+    ,"clientAPI":["JavaScript","Java (J2SE and J2ME)",".NET"]
+    ,"serverAPI":["Java",".NET","PHP","HTTP"]
+    ,"serverLang":["Java"]
     ,"serverOS":["linux/unix", "mac", "windows"]
-	,"protocols":[]
-	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"protocols":["Migratory Extensible Protocol"]
+    ,"transports":["htmlfile-streaming","xhr-streaming","multipart-streaming"]
     ,"messageDeliveryGuarantee":"true"
     ,"horizontalScaling":"multiple nodes"
-	,"verticalScaling":""
-	,"cloudHostingProviders": [
-		{"provider":"", "url": "", "type": ""}
-	]
-	,"supportProviders": [
-		{"provider":"", "url": "", "type": ""}
-	]
-	,"contentLastModified":"2010-08-21"
+    ,"verticalScaling":"Scale up to 1 million users; Push 1 million messages per second; Scale up to 1Gbps pushing messages of 2 KB to 10000 users with latency of 7 milliseconds. http://migratory.ro/data/MigratoryPushServerBenchmarks.pdf"
+    ,"cloudHostingProviders": [
+        {"provider":"", "url": "", "type": ""}
+    ]
+    ,"supportProviders": [
+        {"provider":"Migratory Data Systems", "url": "http://www.migratory.ro", "type": "Commercial"}
+    ]
+    ,"contentLastModified":"2010-11-11"
 }
 ,{
 	"id":"ape"
@@ -408,71 +408,96 @@
 	]
 	,"contentLastModified":"2010-08-21"
 }
+,{
+	"id":"socketio"
+	,"name":""
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+	{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+	{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"googleappengine"
+	,"name":""
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+,{
+	"id":"nodejs"
+	,"name":""
+	,"description":""
+	,"version":""
+	,"status":""
+	,"license":[]
+	,"dedicated":""
+	,"dependencies":""
+	,"url":""
+    ,"demoUrl":""
+    ,"docsUrl":""
+	,"clientAPI":["JavaScript"]
+	,"serverAPI":[]
+	,"serverLang":[]
+    ,"serverOS":["linux/unix", "mac", "windows"]
+	,"protocols":[]
+	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
+    ,"messageDeliveryGuarantee":"true"
+    ,"horizontalScaling":"multiple nodes"
+	,"verticalScaling":""
+	,"cloudHostingProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"supportProviders": [
+		{"provider":"", "url": "", "type": ""}
+	]
+	,"contentLastModified":"2010-08-21"
+}
+
 /*
-
-
-,{
-	"id":""
-	,"name":""
-	,"description":""
-	,"version":""
-	,"status":""
-	,"license":[]
-	,"dedicated":""
-	,"dependencies":""
-	,"url":""
-    ,"demoUrl":""
-    ,"docsUrl":""
-	,"clientAPI":["JavaScript"]
-	,"serverAPI":[]
-	,"serverLang":[]
-    ,"serverOS":["linux/unix", "mac", "windows"]
-	,"protocols":[]
-	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
-    ,"messageDeliveryGuarantee":"true"
-    ,"horizontalScaling":"multiple nodes"
-	,"verticalScaling":""
-	,"cloudHostingProviders": [
-	{"provider":"", "url": "", "type": ""}
-	]
-	,"supportProviders": [
-	{"provider":"", "url": "", "type": ""}
-	]
-	,"contentLastModified":"2010-08-21"
-}
-,{
-	"id":""
-	,"name":""
-	,"description":""
-	,"version":""
-	,"status":""
-	,"license":[]
-	,"dedicated":""
-	,"dependencies":""
-	,"url":""
-    ,"demoUrl":""
-    ,"docsUrl":""
-	,"clientAPI":["JavaScript"]
-	,"serverAPI":[]
-	,"serverLang":[]
-    ,"serverOS":["linux/unix", "mac", "windows"]
-	,"protocols":[]
-	,"transports":["polling","long-polling","iframe-streaming","direct-socket","WebSockets"]
-    ,"messageDeliveryGuarantee":"true"
-    ,"horizontalScaling":"multiple nodes"
-	,"verticalScaling":""
-	,"cloudHostingProviders": [
-		{"provider":"", "url": "", "type": ""}
-	]
-	,"supportProviders": [
-		{"provider":"", "url": "", "type": ""}
-	]
-	,"contentLastModified":"2010-08-21"
-}
-
-
 Tornado
-Rupy
 Pusher
 Diesel
 */
