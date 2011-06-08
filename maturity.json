@@ -144,16 +144,16 @@
 ,{
 	"id":"websync"
 	,"name":"WebSync"
-	,"description":"A highly scalable HTTP Comet server built for the Microsoft stack ASP.NET/IIS) using the Bayeux Protocol"
-	,"version":"3.1"
+	,"description":"A highly scalable HTTP Comet server built for the Microsoft stack (ASP.NET/IIS) using the Bayeux Protocol"
+	,"version":"3.4"
 	,"status":"Production"
 	,"license":["Commercial"]
 	,"dedicated":"true"
 	,"dependencies":"IIS"
 	,"url":"http://frozenmountain.com/"
     ,"demoUrl":"http://frozenmountain.com/websync/learn/demos"
-    ,"docsUrl":"http://frozenmountain.com/websync/support/documentation/v3"
-    ,"clientAPI":["JavaScript","PHP",".NET","Silverlight",".NET Compact"]
+    ,"docsUrl":"http://docs.frozenmountain.com/"
+    ,"clientAPI":["JavaScript","PHP",".NET","Silverlight",".NET Compact","Windows Phone","iOS","Objective-C"]
 	,"serverAPI":["C#","VB.NET","J#","F#"]
 	,"serverLang":["C#"]
     ,"serverOS":["windows"]
@@ -170,7 +170,7 @@
 		{"provider":"WebSync Community", "url": "http://frozenmountain.com/websync/support./community", "type": "Free"}
 		{"provider":"Frozen Mountain", "url": "http://frozenmountain.com/websync/support/subscriptions", "type": "Commercial"}
 	]
-	,"contentLastModified":"2010-08-21"
+	,"contentLastModified":"2011-04-15"
 }
 
 ,{
